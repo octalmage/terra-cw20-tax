@@ -1,0 +1,44 @@
+[package]
+edition = "2018"
+name = "cw20-tax"
+version = "0.9.0"
+authors = ["Jason Stallings <octalmage@users.noreply.github.com>"]
+description = "Basic implementation of a CosmWasm-20 compliant token with 5% transfer tax"
+homepage = "https://cosmwasm.com"
+documentation = "https://docs.cosmwasm.com"
+license = "Apache-2.0"
+repository = "https://github.com/octalmage/cw20-tax"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+[dependencies.cosmwasm-std]
+version = "0.16.0"
+
+[dependencies.cw-storage-plus]
+version = "0.9.0"
+
+[dependencies.cw0]
+version = "0.9.0"
+
+[dependencies.cw2]
+version = "0.9.0"
+
+[dependencies.cw20]
+version = "0.9.0"
+
+[dependencies.schemars]
+version = "0.8.1"
+
+[dependencies.serde]
+version = "1.0.103"
+features = ["derive"]
+default-features = false
+
+[dependencies.thiserror]
+version = "1.0.23"
+[dev-dependencies.cosmwasm-schema]
+version = "0.16.0"
+
+[features]
+backtraces = ["cosmwasm-std/backtraces"]
+library = []

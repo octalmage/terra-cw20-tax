@@ -1,0 +1,2 @@
+#!/bin/bash
+terrad tx wasm instantiate $1 '{"name":"KWON", "symbol": "kwon", "decimals": 8, "initial_balances": [{ "address": "terra1dcegyrekltswvyy0xy69ydgxn9x8x32zdtapd8", "amount": "1000000000000" }]}' --from test1 --chain-id=localterra --fees=26951uluna --gas=auto --broadcast-mode=block -y
